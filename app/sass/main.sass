@@ -1,0 +1,1177 @@
+$light-grey: #9fa3a7
+$yell: #ffc80a
+$purp: #8f75be
+
+%start_dance-h-base
+	font-family: 'ArvoRegular'
+	font-size: 44px
+
+%grey-opensans-base
+	font-family: 'OpenSans'
+	color: $light-grey
+
+.button
+	font-family: 'LatoBold'
+	font-size: 14px
+	text-transform: uppercase
+	border: 3px solid $yell
+	border-radius: 28px
+	padding: 18px 50px
+	color: #000
+
+.navbar
+	background-color: rgba(0,0,0,.6);
+	z-index: 1000
+
+	.navbar-header
+			
+		button
+			padding: 6px 0 0 0
+
+			span
+				background-color: #fff
+				height: 4px
+				width: 30px
+
+			.icon-bar-inverse
+				background-color: $yell
+
+		.navbar-brand
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+
+			span
+				font-family: 'LatoBold'
+				font-size: 28px
+				color: #fff
+				text-transform: uppercase
+				margin-left: 15px
+				padding-top: 2px
+
+	.navbar-collapse
+		float: right
+		margin-top: 15px
+
+		div:nth-child(5)
+			margin-left: 130px
+
+
+		div
+			display: inline-block
+			font-family: 'LatoBold'
+			font-size: 16px
+			margin-right: 40px
+			text-align: center
+			
+			a
+				color: #fff
+				margin: 0 auto
+
+			.active
+				text-decoration: none
+				color: $yell
+
+			a:hover, a:focus
+				text-decoration: none
+				color: $yell
+
+			.button
+				padding: 10px
+				
+.main_screen
+	background-color: #2c2c2c
+	padding: 85px 0 0
+	position: relative
+
+			
+	.big_logo
+		max-width: 450px
+		margin: 0 auto 
+		z-index: 2
+
+	.slog
+		font-family: "OpenSansBold"
+		font-size: 89px
+		margin: 0 auto
+		max-width: 760px
+		max-height: 90px
+		text-align: center
+		color: #fff
+
+	.slog_2
+		font-size: 65px
+		max-height: 70px
+
+	.quote
+		margin: 40px auto 0
+		max-width: 700px
+
+		.inside_quote
+			width: 570px
+			position: absolute
+			margin:
+				left: 100px
+				top: -63px
+
+			div
+				display: inline-block
+				font-family: 'ArvoRegular'
+				font-size: 22px
+				width: 525px
+
+			img
+				margin:
+					bottom: 36px
+					right: 12px
+
+		.writer
+			width: 400px
+			margin:
+				left: 100px
+				top: 5px
+
+			span
+				font-family: 'LatoRegular'
+				color: #fff
+	
+			.name
+				font-size: 20px
+
+			.who
+				font-size: 18px
+
+	#video-bg
+		position: absolute
+		top: 0
+		left: 0
+		overflow: hidden
+		z-index: 1
+		width: 100%
+		height: 100%
+
+		video
+			min-width: 100%
+			min-height: 100%
+			width: auto
+			height: auto
+
+#dances
+	position: relative
+	height: 1000px
+	background-color: #000
+	padding:
+		top: 30px
+	opacity: 0.9
+
+	.main_buttonset
+		width: 585px
+		margin: 0 auto
+
+		.button	
+			font-size: 12px
+			letter-spacing: 1px
+
+		.button:hover, .button:focus
+			text-decoration: none
+
+		#la
+			padding: 7px 10px 4px
+			border-radius: 20px 0 0 20px
+			margin-right: -3px
+			color: #fff
+			background-color: rgba(0, 0, 0, 0) 
+
+		#st
+			padding: 7px 45px 4px 45.5px
+			border-radius: 0 20px 20px 0 
+			margin-left: -3px
+			color: #fff
+			background-color: rgba(0, 0, 0, 0)
+
+		.active
+			color: #000 !important
+			background-color: $yell !important 
+
+	.buttonset
+		
+		.button	
+			font-size: 12px
+			letter-spacing: 1px
+			padding: 7px 10px 4px
+			background-color: rgba(0, 0, 0, 0)
+			color: #fff
+
+		.active
+			border: 3px solid $yell !important
+			margin: 0 !important
+
+		.button
+			margin: 3px
+			border: none
+
+		.button:hover
+			border: 3px solid $yell
+			margin: 0
+
+	#la_buttonset
+		width: 447px
+		margin: 
+			top: 15px 
+			left: -223.5px
+		left: 50%
+		position: absolute
+		display: none
+	
+	#st_buttonset
+		width: 690px
+		margin: 
+			top: 15px 
+			left: -345px
+		left: 50%
+		position: absolute
+		display: none
+
+	.visual
+		display: block !important
+
+	.unvisial_div
+		margin: 120px 0
+
+	.description_of_dances
+		margin: 0 auto
+		max-width: 710px
+		min-height: 450px
+	
+		.dance_description
+			display: none
+			opacity: 0
+			font-family: 'OpenSansRegular'
+			font-size: 16px
+			color: #fff
+			//-webkit-text-stroke: 1px black
+			background-color: rgba(0, 0, 0, 0.6)
+			padding: 60px 25px
+			border-radius: 8px
+			
+	.about_dances_buttonset
+		margin: 100px auto 0
+		padding: 0 10px
+		max-width: 710px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		z-index: 1000
+
+		#trial_lesson
+			font-family: 'LatoBold'
+			font-size: 12px
+			color: #fff
+			text-transform: uppercase
+			letter-spacing: 2px
+			margin:
+				top: 10px
+
+			img
+
+				margin:
+					left: 5px
+					bottom: 3px
+		
+		#trial_lesson:hover
+			text-decoration: none
+			color: $yell
+
+		#about_dance
+			color: #fff
+			padding: 10px 18px
+			margin:
+				top: 10px
+
+		#about_dance:hover
+			text-decoration: none
+			color: $yell
+
+		#roll_up
+			display: none
+			color: #fff
+			padding: 10px 18px
+			margin:
+				top: 10px
+
+		#roll_up:hover
+			text-decoration: none
+			color: $yell
+
+	.dance_images
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0%
+		display: flex
+		justify-content: center
+		z-index: -1
+		overflow: hidden
+
+		.dance_image
+			top: 0%
+			left: 0%
+			position: absolute
+			opacity: 0
+			overflow: hidden
+			height: 100%
+			width: 100%
+			
+
+		#img_sa
+			opacity: 1
+
+
+#crystal_advantages
+
+	h1
+		font-family: 'ArvoRegular'
+		font-size: 36px
+		margin: 0 auto
+		max-width: 382px
+		margin:
+			top: 40px
+
+	.advantages_container
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		min-height: 320px
+
+		.advantage:nth-child(1), .advantage:nth-child(4)
+			//background-color: #303030
+
+		.advantage:nth-child(2), .advantage:nth-child(3)
+			//background-color: #8f75be
+
+		.advantage
+			width: 50%
+			min-height: 90px
+
+			.right_advantage
+				float: right
+
+			.inside_advantage
+				display: flex
+				flex-direction: row
+				justify-content: flex-start
+				align-items: center
+				min-width: 500px
+				margin: 25px 110px 0
+
+				.number
+					font-family: 'MontserratBold'
+					font-size: 15px
+					border-radius: 50px
+					background-color: $yell
+					padding: 0 6.2px
+
+				#first_number
+					padding: 0 7.3px
+
+				.for_advantage_icon
+					min-width: 82px
+					
+
+				.advantage_text
+					margin:
+						left: 12px
+					color: #000
+
+
+					h2
+						margin: 
+							top: 5px
+						font-family: 'LatoBold'
+						font-size: 12px
+						text-transform: uppercase
+						letter-spacing: 2px
+
+					p 
+						font-family: 'OpenSansRegular'
+						font-size: 14px
+						max-width: 390px
+						color: #929395
+						line-height: 1.7
+
+
+
+
+
+
+.start_dance
+	position: relative
+	min-height: 800px
+
+	.entry_container
+		position: absolute
+		top: 0%
+		z-index: -1	
+
+		width: 80%
+		height: 100%
+		left: 50%
+		margin-left: -40%
+
+	.entry
+		display: flex
+		flex-direction: column
+		height: 100%
+		min-height: 800px
+		width: 100%
+		
+		.start_entry
+			width: 100%
+			min-height: 400px
+			height: 50%
+			position: absolute
+
+			.inside
+				width: 100%
+				height: 100%
+				display: flex
+				flex-direction: row
+				flex-wrap: wrap
+				align-items: center
+
+					
+				.training_description
+					width: 550px
+					color: #fff
+					margin: 25px
+
+					h1
+						font-family: 'LatoBold'
+						font-size: 32px
+						letter-spacing: 2px
+
+
+					p
+						font-family: 'OpenSansRegular'
+						font-size: 14px
+						align: right
+						line-height: 2
+
+				.begin_entry
+					width: 380px
+
+					.button
+						margin:
+							left: 35%
+						padding: 6px 25px;
+						text-shadow: -1px -1px 0 #000
+						text-shadow: 1px -1px 0 #000
+						text-shadow: -1px 1px 0 #000
+						text-shadow: 1px 1px 0 #000
+						
+					.button:hover
+						color: $yell !important
+
+		#for_adults
+			top: 50%
+			background-color: #2c2c2c
+			background-image: url(../img/bg-adults.png)
+			
+			#inside_for_adults
+				justify-content: right
+				background-image: url(../img/dancing-adults.png)
+				background-repeat: no-repeat
+				background-position: left
+				background-size: 700px
+
+				.button
+					background: rgba(0, 0, 0, 0)
+					color: #fff
+
+		#for_child
+			background-image: url(../img/bg-kids.png)
+			background-color: #a666a7
+			
+			#inside_for_child
+				background-image: url(../img/dancing-kids.png)
+				background-repeat: no-repeat
+				background-position: right
+				background-size: 800px
+
+				.button
+					background: rgba(0, 0, 0, 0)
+					color: #fff
+
+	.contacts
+		margin: 7% 0
+		padding: 40px 0
+		min-height: 600px
+
+		.container
+			width: 100%
+
+		h3, h4
+			font-family: 'LatoBold'
+			font-size: 14px
+			letter-spacing: 2px
+			text-transform: uppercase
+			color: $light-grey
+
+		h3
+			font-size: 20px
+			letter-spacing: 4px
+
+		.call_me
+			max-width: 650px
+			min-height: 250px
+			margin: 0 auto
+
+			.main_fields
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				align-items: center
+				flex-wrap: wrap
+				width: 100%
+
+				input
+					width: 300px
+					height: 43px
+					border: none
+					border-bottom: 3px solid #8f75be
+					margin: 15px auto
+					padding-left: 10px
+
+			.optional_fields
+				margin:
+					top: 70px
+				padding: 0 12.5px
+
+				h4
+					color: #626467
+					font-size: 12px
+
+				input
+					width: 100%
+					margin: 15px auto
+					border: none
+					border-bottom: 3px solid #8f75be
+
+		.contacts_buttonset
+			max-width: 850px
+			margin: 155px auto 0
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			flex-wrap: wrap
+
+			button
+				font-family: 'LatoBold'
+				font-size: 14px
+				letter-spacing: 2px
+				text-transform: uppercase
+				margin: 0 20px
+
+			#back
+				width: 232px
+				height: 44px
+				border: 2px solid $light-grey
+				border-radius: 20px
+				background-color: #FFF
+
+			#back:hover
+				background-color: #e4e4e4
+								
+			#done
+				width: 160px
+				height: 44px
+				background-color: $purp
+				border-radius: 20px
+				border: none
+				
+	.confirm
+		padding: 50px 0
+		margin:
+			top: 12%
+			bottom: 50px
+		display: none
+		flex-direction: column
+		align-items: center
+		justify-content: space-between
+
+
+		#congratulations
+			display: block
+			font-family: 'ArvoRegular'
+			font-size: 32px
+			margin-top: 20px
+
+		.button
+			padding: 15px 65px
+			letter-spacing: 2px
+			background-color: #fff
+			margin-top: 35px
+
+		.button:hover
+			color: $yell
+
+#section_footer
+	min-height: 800px	
+
+.services_slider
+	position: relative
+	height: 50%
+	min-height: 400px
+
+	#wedding_dance
+		background-color: #303030
+		position: absolute
+		top: 0
+		right: -100%
+		display: none
+	
+	#show_service
+		background-color: #a666a7
+
+	.service_slide
+		min-height: 370px
+		width: 100%
+		height: 100%
+		min-height: 400px
+
+		.service_content
+			max-width: 550px
+			margin: 0 auto 
+			color: #fff
+			padding: 60px 30px 30px
+
+			h2
+				font-family: 'LatoBold'
+				font-size: 32px
+				margin: 0 0
+
+			p 
+				font-family: 'OpenSansRegular'
+				font-size: 14px
+				margin: 
+					top: 20px
+
+			.button
+				margin: 0 auto
+				background-color: rgba(0, 0, 0, 0)
+				padding: 10px 25px
+
+	.circles
+		position: absolute
+		display: flex
+		justify-content: center
+		align-items: center
+		bottom: 10%
+		width: 100%
+
+		.circle
+			height: 10px
+			width: 10px
+			background-color: rgba(256, 256, 256, .5)
+			border-radius: 50px
+			margin: 0 11px
+
+		.big_circle
+			height: 15px
+			width: 15px
+			margin: 0 8.5px
+			background-color: #fff
+
+	.arrow
+		position: absolute
+		height: 75px
+		width: 75px
+		background-color: rgba(256, 256, 256, .2)
+		border-radius: 50px
+		top: 45%
+
+		img
+			display: block
+			width: 50%
+			height: 42%
+			margin: 28% auto
+
+	#left
+		left: 5%
+
+	#right
+		right: 5%
+
+	.for_arrow
+		position: absolute
+		height: 100%
+		width: 15%
+		top: 0
+
+	.for_arrow:hover
+		cursor: pointer
+
+	#for_left_arrow
+		left: 0
+
+	#for_right_arrow
+		right: 0
+
+
+.modalDialog
+	position: relative
+	background-color: #fff
+	width: 1140px
+	height: 625px
+	margin: 0 auto
+	display: flex
+	flex-direction: row
+	padding: 100px 50px 0
+
+	.close
+		position: absolute
+		top: 15px
+		right: 15px
+
+	.modal_text
+		width: 580px
+
+		h1
+			font-family: 'LatoHeavy'
+			font-size: 66px
+			margin: 0 40px
+			text-transform: uppercase
+
+		.our_contacts
+			margin: 85px 40px 0
+
+			div
+				margin:
+					top: 30px
+
+				span
+					font-family: 'OpenSansRegular'
+					font-size: 14px
+					color: #9fa3a7
+					margin:
+						left: 15px
+
+	#callback
+		width: 400px
+		height: 370px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+
+		.input_and_name
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+
+			span
+				width: 80px
+				font-family: 'LatoHeavy'
+				font-size: 10pt
+
+			input
+				width: 320px
+				border: none
+				border-bottom: 1px solid #cccccc
+
+			#datetime
+				width: 320px
+
+				span
+					width: 80px
+					margin: 0 17px
+
+				input  
+					width: 120px
+
+		#confirm
+			display: flex
+			justify-content: space-between
+			margin:
+				top: 15px
+
+			span
+
+
+			input
+				width: 195px
+				border: 1px solid #cccccc
+				background-color: $yell
+				color: #000
+
+
+.footer
+	height: 50%
+	min-height: 400px
+	background-color: #2c2c2c
+	
+	.logos
+		display: flex
+		flex-direction: row
+		justify-content: space-around
+		align-items: center
+		margin: 35px 0
+
+	hr
+		color: #424242
+		background-color: #424242	
+		border: none
+		height: 2px
+
+	.icons
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		width: 200px
+		margin: 0 auto
+
+	.down_menu
+		display: flex
+		flex-direction: row
+		justify-content: space-around
+		align-items: top
+
+		.title
+			font-family: 'LatoBold'
+			font-size: 30px
+			text-transform: uppercase
+			color: #fff
+			width: 165px
+
+		.title:hover, .title:focus
+			text-decoration: none
+
+		.links
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: top
+			width: 555px
+			padding: 
+				top: 5px
+				left: 10px
+
+			a
+				font-family: 'LatoBold'
+				font-size: 12px
+				text-transform: uppercase
+				color: #fff
+				margin:
+					bottom: 4px
+
+			a:nth-child(1)
+				width: 55px
+
+			a:nth-child(2)
+				width: 70px	
+
+			a:hover
+				text-decoration: none
+				color: $yell
+
+	.all_rights
+		font-family: 'OpenSansRegular'
+		font-size: 12px
+		color: #5e5e5e
+		width: 195px
+		margin: 0 auto		
+
+.contacts__content
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+	margin:
+		top: 51px
+
+	.info
+		margin: 
+			left: 390px
+		padding:
+			left: 20px
+			bottom: 20px
+		h2
+			font-family: 'LatoBold';
+			font-size: 28px;
+			text-transform: uppercase;
+
+		h3
+			font-family: 'ArvoRegular'
+			color: #afb3b6
+			font-size: 14px
+			margin:
+				top: 50px
+		
+		.addr
+			font-family: 'OpenSansBold'
+			font-size: 24px
+
+		.tel
+			font-family: 'ArvoRegular'
+			font-size: 24px
+
+		p
+			font-family: 'ArvoRegular'
+			font-size: 19px
+			color: #afb3b6
+			max-width: 430px
+			margin: 70px 0
+
+		.icons
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			max-width: 250px 
+
+	#map
+		width: 870px
+		height: 850px		
+
+.navbar_about
+	background-color: rgba(256,256,256,.6)
+
+	.navbar-brand
+
+		span
+			color: #000 !important
+
+	.navbar-collapse
+		
+		div
+			a
+				color: #000
+
+.submenu
+	margin:
+		top: 50px
+
+	.about_menu
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		margin 0 auto
+
+		.about_menu_item
+
+			a
+				font-family: "LatoBold"
+				font-size: 12px
+				text-transform: uppercase
+				letter-spacing: 2px
+				color: #757575
+				text-align: center
+			
+			.active
+				color: #000
+
+			.low
+				height: 50%
+
+			a:hover
+				text-decoration: none
+
+			#menu_line
+				height: 3px
+				background-color: #8f75be
+				color: #8f75be
+				margin: 0	
+
+			.active_line
+				width: 100% 
+
+			.non-active_line
+				width: 0
+				
+	.button-collapse
+		display: none
+
+		button
+			background-color: $yell
+			font-family: "LatoBold"
+			font-size: 12px
+			text-transform: uppercase
+			letter-spacing: 2p
+			color: #000
+			border:
+				bottom: solid 3px #dfb00f
+				right: none
+				left: none
+				top: none
+			width: 100%
+			padding: 15px 0 10px
+
+.club_history
+	padding: 10px 0
+	
+
+	h1
+		max-width: 650px
+		font-family: 'ArvoRegular'
+		font-size: 48px
+		margin: 85px auto
+		text-align: center
+		padding: 0 20px
+
+	p
+		max-width: 980px
+		font-family: 'OpenSansRegular'
+		font-size: 16px
+		margin: 0 auto
+		color: #838485
+		line-height: 2.2
+		padding: 0 20px
+		margin:
+			bottom: 110px
+
+	#big_slider
+		position: relative
+		
+		.big_slide
+			position: absolute
+			width: 100%
+			height: auto
+			top: 0
+			right: -100%
+			display: none
+
+		.active
+			display: flex
+			position: relative
+			right: 0 
+
+		.circles
+			position: absolute
+			display: flex
+			justify-content: center
+			align-items: center
+			bottom: 10%
+			width: 100%
+
+			.circle
+				height: 10px
+				width: 10px
+				background-color: rgba(256, 256, 256, .5)
+				border-radius: 50px
+				margin: 0 11px
+
+			.big_circle
+				height: 15px
+				width: 15px
+				margin: 0 8.5px
+				background-color: #fff
+
+		.arrow
+			position: absolute
+			height: 75px
+			width: 75px
+			background-color: rgba(256, 256, 256, .2)
+			border-radius: 50px
+			top: 45%
+
+			img
+				display: block
+				width: 50%
+				height: 42%
+				margin: 28% auto
+
+		#left
+			left: 5%
+
+		#right
+			right: 5%
+
+		.for_arrow
+			position: absolute
+			height: 100%
+			width: 15%
+			top: 0
+
+		.for_arrow:hover
+			cursor: pointer
+
+		#for_left_arrow
+			left: 0
+
+		#for_right_arrow
+			right: 0
+
+	#small_slider
+		position: relative
+		width: 60%
+		margin: 30px auto
+
+		.slide	
+			opacity: 0
+			margin: 0 auto
+			width: 100%
+			height: auto
+			position: absolute
+			top: 0
+			left: 0
+
+		.active
+			opacity: 1
+			position: relative
+
+		.counter
+			position: absolute
+			display: flex
+			justify-content: right
+			width: 90%
+			bottom: 5%
+			opacity: 1 !important
+
+			img:hover
+				cursor: pointer
+
+			span
+				font-family: 'MontserratRegular'
+				font-size: 15px
+				letter-spacing: 6px
+				margin: 3px 8px 0 12px
+				color: #fff
+
+			span:hover
+				cursor: default
+
+#fp-nav
+
+	ul
+		li
+
+			a
+				
+				span
+					height: 6px !important
+					width: 6px !important
+					margin: -3px 0 0 -3px !important
+
+				span:hover
+					height: 10px !important
+					width: 10px !important
+					margin: -5px 0 0 -5px !important
+
+			.active
+
+				span
+					background-color: $yell
+					height: 10px !important
+					width: 10px !important
+					margin: -5px 0 0 -5px !important
+	
+
+
+
+
+
+

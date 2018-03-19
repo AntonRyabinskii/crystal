@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ТК Кристалл</title>
+	<meta name="description" content="Клуб бального танца Кристалл">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1"> 
+	<link rel="shortcut icon" href="img/shortcut.png">
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="libs/fullpage/jquery.fullPage.css">
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+             <img src="img/logo.png" alt="" class="logo">
+             <span>кристалл</span>
+            </a>
+        </div>
+        <div class="navbar-collapse collapse">                
+            <div><a class="active" href="#">Главная</a></div>
+            <div><a href="about.html">О клубе</a></div>
+            <div><a href="#">Клубные карты</a></div>
+            <div><a href="contacts.html">Контакты</a></div>
+            <div><a href="#" class="button">Пробный урок</a></div>                     
+        </div>
+    </div>
+    <div id="fullPage">
+    	<div class="main_screen section section-1">
+    		<div class="big_logo">
+    			<img src="img/big_logo.png" alt="">
+    		</div>
+    		<h1 class="slog slog_1">Бальные танцы</h1>
+    		<h2 class="slog slog_2">для детей и взрослых</h2>
+    		<div class="quote">
+    			<img src="img/writer.png" alt="">
+    			<img class="for_quote" src="img/for_quote.png" alt="">
+    			<div class="inside_quote">
+    				<img src="img/points.png" alt="">
+    				<div>Танец – единственный вид искусства, в котором мы сами являемся инструментом.</div>
+    			</div>
+    			<div class="writer">
+    				<span class="name">Рахель Фарнхаген,</span>
+    				<span class="who">немецкая писательница</span>
+    			</div>
+    		</div>
+    		<!--<div id="video-bg">
+    			<video width="100%" height="auto" preload="auto" autoplay="autoplay"
+    				loop="loop">
+        			<source src="video/The Trailer - 2017 Grandslam Latin Final - DanceSport Total.mp4" type="video/mp4"></source>
+    			</video>
+			</div>-->
+    	</div>
+    	<div id="dances" class="section section-2">
+    		<div class="main_buttonset">
+    			<button class="button active" id="la">латиноамериканская программа</button>
+    			<button class="button" id="st">европейская программа</button>
+    		</div>
+    		<div class="buttonset visual" id="la_buttonset">
+    			<button class="button dance_button_la active" id="sa">самба</button>
+    			<button class="button dance_button_la" id="ch">ча-ча-ча</button>
+    			<button class="button dance_button_la" id="ru">румба</button>
+    			<button class="button dance_button_la" id="pd">пасодобль</button>
+    			<button class="button dance_button_la" id="jv">джайв</button>
+    		</div>
+    		<div class="buttonset" id="st_buttonset">
+    			<button class="button dance_button_st active" id="sw">медленный вальс</button>
+    			<button class="button dance_button_st" id="tg">танго</button>
+    			<button class="button dance_button_st" id="vw">венский вальс</button>
+    			<button class="button dance_button_st" id="sf">медленный фокстрот</button>
+    			<button class="button dance_button_st" id="qs">квикстеп</button>
+    		</div>
+    		<div class="unvisial_div"></div>
+    		<div class="description_of_dances">
+    			<div class="dance_description active" id="sa_description">
+    				<p>Самба - это фейерверк красок, вихрь эмоций, безумный ритм, абсолютная свобода тела и мыслей. Каждый, кто хоть раз в жизни присутствовал на бразильском карнавале и вживую наблюдал огромные массы людей, необузданно двигающихся под бой сотен барабанов, признаются, что это одно из самых ярких впечатлений в их жизни. В исполнении умелых танцоров, Самба дарит атмосферу солнечного лета и бесконечного праздника.   </p>
+    				<p>Среди других танцев Самба выделяется своим характерным пружинящим движением. Ключевую роль во время ее исполнения играют экспрессия, достаточно откровенные движения бедрами, вертикальные раскачивания, явный флирт и многочисленные смены положений партнеров. </p>
+    			</div>
+    			<div class="dance_description" id="ch_description">
+    				<p>Ча-ча-ча - сравнительно молодой танец, зародившийся на Кубе в середине прошлого столетия, как сочетание мамбо и румбы. Он  получил свое название и характер из-за повторяющегося основного ритма и особого звучания задорных маракасов. Ча-ча-ча - это живые эмоции, воплощенная страсть, которая дополняется изначальным шуточным и раскрепощенным настроением этого танца.</p>
+    				<p>Основа движения в Ча-ча-ча - непрерывная скрутка бедер относительно корпуса. За счет этого возникает ощущения очень скоростного, резкого и четкого движения, от которого у зрителя захватывает дух. Основные шаги Ча-ча-ча крайне легки в освоении даже для новичков, но даже они способны передать легкое и беззаботное настроение этого танца. </p>
+    			</div>
+    			<div class="dance_description" id="ru_description">
+    				Описание румбы
+    			</div>
+    			<div class="dance_description" id="pd_description">
+					<p>Пасодобль зародился в солнечной Испании, а сюжетом для него послужили бои с быками, столь популярные в этой стране. В связи с этим неудивительно, что настроение этого танца - воплощенная страсть, мужество и борьба. Пасодобль исполняют под характерный марш, который, по традиции, звучит перед началом корриды, что делает этот танец еще более драматичным.</p>
+					<p>Для Пасодобля свойственно особое положение тела танцора: высоко приподнятая грудь, жестко зафиксированная голова, расправленные, но опущенные плечи. Как правило, во время исполнения мужчина изображает тореадора. Своим движением он олицетворяет гордость, отвагу, готовность одолеть могучего зверя в честном бою. Женщина, в свою очередь, имитирует плащ в руках своего партнера, полностью подстраиваясь под его движения, с присущей только ей гибкостью и изяществом.  </p>
+    			</div>
+    			<div class="dance_description" id="jv_description">Описание джайва</div>
+    			<div class="dance_description" id="sw_description">
+    				<p>Вальс по праву считается одним из самых красивых и популярных танцев в Европейской культуре. Название танца происходит от немецкого слова walzen – «вращаться», «кружиться». Он имеет долгую и богатую историю развития, уходя корнями к старым народным танцам Австрии и Южной Германии. Позднее, Вальс получил широкое распространение в Европе, став неотъемлемой частью культуры и традиций самых разных национальностей. </p>
+    				<p>В процессе изучения Вальса, танцоры приобретают такие качества, как грациозность, благородство и красивая осанка. Этот танец универсален и прост в освоении. Умение красиво исполнить Вальс пригодится на всевозможных видах торжеств, будь то выпускной вечер, свадьба или юбилей. Классический Медленный Вальс можно смело назвать жемчужиной Европейской программы танцев, символом романтичности и изящества.</p>
+    			</div>
+    			<div class="dance_description" id="tg_description">
+    				<p>Танго притягивает взгляд зрителя своей экспрессивностью, четким ритмом и взрывным движением. Это объясняется тем, что этот танец, единственный из Европейкой программы, имеет латиноамериканское происхождение, но в последствии распространился и стал популярен повсеместно. Танго не похож ни на один танец в мире, это уникальная смесь стилей, родившаяся на стыке двух разных подходов к танцеванию.</p>
+    				<p>Во время танца партнеры переживают все этапы человеческих взаимоотношений: встреча, возникшее влечение, жажда сближения, страсть, предчувствие скорой разлуки, и, наконец, неизбежное расставание в конце. Подобная буря эмоций не способна оставить равнодушными как танцоров, так и зрителей, наблюдающих за происходящим со стороны.</p>
+    			</div>
+    			<div class="dance_description" id="vw_description">
+    				<p>Венский вальс - это физическое воплощение бессмертных произведений таких маэстро, как Штраус, Шопен, Верди, Свиридов. Только прочувствовав внутренний мир великих композиторов, пропустив через себя их музыку, увидев мир их глазами, можно понять невероятную красоту и гармонию этого танца. Сочетание стремительной скорости и неуловимой легкости в Венском вальсе способно доставить истинное наслаждение настоящим эстетам танцевального искусства.</p>
+    				<p>По мере обучения Венскому Вальсу, человек открывает перед собой новые горизонты в понимании Европейской программы. Грациозность, достоинство, строгая элегантность, присущие этому танцу, даются не сразу, но только после их успешного освоения ученик делает шаг из любительского уровня в мир профессионального танцевания.     </p>
+    			</div>
+    			<div class="dance_description" id="sf_description">
+    				<p>Медленный фокстрот, появившийся в Нью-Йорке в начале 20-х годов ХХ века, способен приоткрыть дверь в ту эпоху для любого, кто захочет его станцевать. Неторопливые джазовые мелодии, элегантные дамы в струящихся вечерних платьях, темпераментные кавалеры в классических костюмах, все это как нельзя лучше передает дух того времени.</p>
+    				<p>Благодаря постоянно меняющемуся ритмическому рисунку в ходе исполнения, Медленный фокстрот, несомненно, является сложнейшим из всех танцев Европейской программы. Его изучение начинается только после того, как ученик достиг достаточно высокого уровня в техническом плане, способности улавливать самые тонкие моменты в музыке, недоступные уху обычного слушателя, а также умения импровизировать на паркете.</p>
+    			</div>
+    			<div class="dance_description" id="qs_description">
+    				<p>Квикстеп - самый быстрый и динамичный из всех танцев Европейской программы. Веселый, беззаботный, игривый, он дарит зрителю ощущение легкости и труднопреодолимое желание пуститься в пляс.</p>
+    				<p>Базовые шаги и фигуры Квикстепа просты в освоении, что позволяет исполнять его даже новичкам. Профессиональным же танцорам здесь предоставлен неограниченный плацдарм для развития. Благодаря наличию огромного количества связок различной скорости и сложности, а также возможности сколько угодно комбинировать их между собой, каждая пара способна выразить через Квикстеп свою уникальность и неповторимый стиль. </p>
+    			</div>
+    		</div>
+    		<div class="about_dances_buttonset">
+    			<a href="#" id="trial_lesson">пробное занятие<img src="img/trial_lesson.png" alt=""></a>
+    			<a href="#" class="button" id="about_dance">подробнее о танце</a>
+    			<a href="#" class="button" id="roll_up">свернуть</a>
+    		</div>
+    		<div class="dance_images">
+    			<img src="img/saks.png" class="dance_image" id="img_sa" alt="">
+    			<img src="img/saks.png" class="dance_image" id="img_ch" alt="">
+    			<img src="img/saks.png" class="dance_image" id="img_ru" alt="">
+    			<img src="img/saks.png" class="dance_image" id="img_pd" alt="">
+    			<img src="img/saks.png" class="dance_image" id="img_jv" alt="">
+    			<img src="img/saks.png" class="dance_image" id="img_sw" alt="">
+    			<img src="img/saks.png" class="dance_image" id="img_tg" alt="">
+    			<img src="img/saks.png" class="dance_image" id="img_vw" alt="">
+    			<img src="img/saks.png" class="dance_image" id="img_sf" alt="">
+    			<img src="img/saks.png" class="dance_image" id="img_qs" alt="">
+    		</div>
+    	</div>
+    	<div class="section section-3" id="crystal_advantages">
+    		<h1>Бальные танцы это</h1>
+    		<div class="advantages_container">
+    			<div class="advantage" id="coaches">
+    				<div class="inside_advantage right_advantage">
+    					<div class="for_advantage_icon">
+    						<img src="img/advantages icons/icons8-torso-50.png" alt="">
+    					</div>
+    					<!--<span class="number" id="first_number">1</span>-->
+    					<div class="advantage_text">
+    						<h2>физическое развитие</h2>
+    						<p>Развитие дыхательной системы<br>Равномерное развитие всех групп мышц<br>Улучшение координации движений<br>Выработка правильной осанки и элегантной походки</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="advantage" id="unique_method">
+    				<div class="inside_advantage">
+    					<div class="for_advantage_icon">
+    						<img src="img/advantages icons/target.png" alt="">
+    					</div>
+    					<!--<span class="number">3</span>-->
+    					<div class="advantage_text">
+    						<h2>характер</h2>
+    						<p>Общительность и раскрепощенность<br>Приобритение уверенности в себе<br>Возможность самовыражения<br>Достижение поставленной цели</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="advantage" id="modern_base">
+    				<div class="inside_advantage right_advantage">
+    					<div class="for_advantage_icon">
+    						<img src="img/advantages icons/treble-clef.png" alt="">
+    					</div>
+    					<!--<span class="number">2</span>-->
+    					<div class="advantage_text">
+    						<h2>музыкальность и артистичность</h2>
+    						<p>Развитие чувства ритма<br>Умение держать себя на публике<br>Артистические навыки<br>Эстетическое восприятие гармонии пластики и музыки</p>
+    					</div>
+    				</div>
+    			</div>
+    			
+    			<div class="advantage" id="individual">
+    				<div class="inside_advantage">
+    					<div class="for_advantage_icon">
+    						<img src="img/advantages icons/stopwatch.png" alt="">
+    					</div>
+    					<!--<span class="number">4</span>-->
+    					<div class="advantage_text">
+    						<h2>дисциплина</h2>
+    						<p>Самостоятельность<br>Составление и соблюдение расписания<br>Обязательность<br>Пунктуальность</p>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+			<h1>Клуб "Кристалл" это</h1>
+    		<div class="advantages_container">
+    			<div class="advantage" id="coaches">
+    				<div class="inside_advantage right_advantage">
+    					<div class="for_advantage_icon">
+    						<img src="img/advantages icons/team.png" alt="">
+    					</div>
+    					<!--<span class="number" id="first_number">1</span>-->
+    					<div class="advantage_text">
+    						<h2>профессиональный тренерский состав</h2>
+    						<p>Занятия в клубе Кристалл проводят квалифицированные педагоги с многолетним опытом подготовки танцоров различных категорий</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="advantage" id="modern_base">
+    				<div class="inside_advantage">
+    					<div class="for_advantage_icon">
+    						<img src="img/advantages icons/city-hall.png" alt="">
+    					</div>
+    					<!--<span class="number">2</span>-->
+    					<div class="advantage_text">
+    						<h2>современная тренировочная база</h2>
+    						<p>Тренировочный процесс клуба Кристалл проходит в просторных и комфортных залах, оснащенных современным оборудованием</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="advantage" id="unique_method">
+    				<div class="inside_advantage right_advantage">
+    					<div class="for_advantage_icon">
+    						<img src="img/advantages icons/agenda.png" alt="">
+    					</div>
+    					<!--<span class="number">3</span>-->
+    					<div class="advantage_text">
+    						<h2>уникальная методика</h2>
+    						<p>Практическая подготовка базируется на теоретических разработках ведущих спортсменов России и мира</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="advantage" id="individual">
+    				<div class="inside_advantage">
+    					<div class="for_advantage_icon">
+    						<img src="img/advantages icons/employee.png" alt="">
+    					</div>
+    					<!--<span class="number">4</span>-->
+    					<div class="advantage_text">
+    						<h2>индивидуальный подход</h2>
+    						<p>Гибкая система обучения позволит добиться результата в соответствии с вашими ожиданиями</p>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+		<div class="start_dance section section-4">
+			<div class="entry" id="entry">
+				<div class="start_entry" id="for_child">
+					<div class="inside" id="inside_for_child">
+						<div class="begin_entry" id="child_entry">
+							<button class="button" id="button_child">начать</button>
+						</div>
+						<div class="training_description description_childs">
+							<h1>танцы для детей</h1>
+							<p>Фокстрот, в истоках которого лежит не столь темпераментный ванстеп, был изобретен Гарри Фоксом для выступления на шоу в Нью-Йорке в 1913. Фокстрот был частью представления "Jardin Danse" на крыше Нью-Йоркского театра. Как часть своего выступления, Гарри Фокс делал шаги "рысью"</p>
+						</div>
+					</div>
+				</div>
+				<div class="start_entry" id="for_adults">
+					<div class="inside" id="inside_for_adults">
+						<div class="training_description description_adults">
+							<h1>танцы для взрослых</h1>
+							<p>Фокстрот, в истоках которого лежит не столь темпераментный ванстеп, был изобретен Гарри Фоксом для выступления на шоу в Нью-Йорке в 1913. Фокстрот был частью представления "Jardin Danse" на крыше Нью-Йоркского театра. Как часть своего выступления, Гарри Фокс делал шаги "рысью"</p>
+						</div>
+						<div class="begin_entry" id="adults_entry">
+							<button class="button" id="button_adults">начать</button>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="container entry_container">
+				
+				<div class="contacts" id="contacts">
+					<div class="container">
+						<h3 align="center">контактная информация</h3>
+						<form id="callback" class="call_me">
+
+							<!-- hidden require fields -->
+							<input type="hidden" name="project_name" value="crystalldance.ru">
+							<input type="hidden" name="admin_email" value="tohahagen@gmail.ru">
+							<input type="hidden" name="form_subject" value="Новая заявка с сайта!">
+							<!-- end hidden require fields -->
+
+							<div class="main_fields" id="top_fields">
+								<input type="text" name="name" placeholder="Имя" required>
+								<input type="text" name="surname" placeholder="Фамилия" required>
+							</div>
+							<div class="main_fields" id="bottom_fields">
+								<input type="tel" name="phone" placeholder="Телефон" required>
+								<input type="text" name="e-mail" placeholder="E-mail" required>
+							</div>
+
+							<div class="optional_fields">
+								<h4 align="center">если вы занимались танцами, укажите какими и сколько</h4>
+								<input type="text" name="info">
+							</div>						
+							<div class="contacts_buttonset">
+								<button id="back" type="button">к направлениям</button>
+								<button id="done" type="submit">готово</button>
+							</div>
+						</form>
+
+						
+						
+						
+					</div>
+				</div>
+				<div class="confirm" id="confirm">
+					<img src="img/confirm.png" alt="">
+					<span id="congratulations">Вы успешно записаны</span>
+					<button class="button" id="to_first_step">Далее</button>
+				</div>		
+			</div>
+		</div>
+    
+    	<div class="section section-5" id="section_footer">
+    		<div class="services_slider">
+    			<div class="service_slide big_slide" id="show_service">
+    				<div class="service_content show_service_content">
+    					<h2>танцевальное шоу на вашем мероприятии</h2>
+    					<p>Фокстрот, в истоках которого лежит не столь темпераментный ванстеп, был изобретен Гарри Фоксом для выступления на шоу в Нью-Йорке в 1913. Фокстрот был частью представления "Jardin Danse" на крыше Нью-Йоркского театра. Как часть своего выступления, Гарри Фокс делал шаги "рысью"</p>
+    					<button class="button">оставить заявку</button>
+    				</div>
+    			</div>
+    			<div class="service_slide big_slide" id="wedding_dance">
+    				<div class="service_content wedding_service_content">
+    					<h2>свадебный танец</h2>
+    					<p>Фокстрот, в истоках которого лежит не столь темпераментный ванстеп, был изобретен Гарри Фоксом для выступления на шоу в Нью-Йорке в 1913. Фокстрот был частью представления "Jardin Danse" на крыше Нью-Йоркского театра. Как часть своего выступления, Гарри Фокс делал шаги "рысью"</p>
+    					<a href="#openModal" class="button">оставить заявку</a>
+    				</div>
+    			</div>
+            	<div class="circles">
+                	<div class="circle big_circle"></div>
+                	<div class="circle"></div>
+            	</div>
+            	<div class="arrow" id="left">
+                	<img src="img/arrow_left.png" alt="">
+            	</div>
+            	<div class="arrow" id="right">
+                	<img src="img/arrow_right.png" alt="">
+            	</div>
+            	<div class="for_arrow" id="for_right_arrow"></div>
+            	<div class="for_arrow" id="for_left_arrow"></div>
+    		</div>
+
+			<div id="openModal" class="modalDialog">
+	        	<a href="#close" title="Закрыть" class="close">X</a>
+	        	<div class="modal_text">
+	        		<h1>Выступление наших танцоров</h1>
+	        		<div class="our_contacts">
+	        			<div><img src="img/Icon_tel.png" alt=""><span>+7 (931) 373-44-71</span></div>
+	        			<div><img src="img/Icon_post.png" alt=""><span>crystaldance@club.com</span></div>
+	        		</div>
+	        	</div>
+	        	<form id="callback" class="call_me">
+	        		<div class="input_and_name">
+	        			<span>имя</span>
+	        			<input type="text">
+	        		</div>
+	        		<div class="input_and_name">
+	        			<span>компания</span>
+	        			<input type="text">
+	        		</div>
+	        		<div class="input_and_name">
+	        			<span>телефон</span>
+	        			<input type="text">
+	        		</div>
+	        		
+	        		<div class="input_and_name">
+	        			<span>дата</span>
+	        			<div id="datetime">
+	        				<input type="text">
+	        				<span>время</span>
+	        				<input type="text">
+	        			</div>
+	        		</div>
+	        		
+	        		<div class="input_and_name">
+	        			<span>сообщение</span>
+	        			<input type="text">
+	        		</div>
+	        		
+	        		<div class="input_and_name">
+	        			<span></span>
+	        			<input type="text">
+	        		</div>
+	        		
+	        		<div class="input_and_name">
+	        			<span></span>
+	        			<input type="text">
+	        		</div>
+	        		
+	        		<div id="confirm">
+	        			<span>обязательное поле</span>
+	        			<input type="confirm" class="button" placeholder="отправить">
+	        		</div>
+	        	</form>
+			</div>
+
+			<div class="footer">
+				<div class="container">
+					<div class="logos">
+						<img src="img/wdsf_logo.png" alt="" class="wdsf">
+					</div>
+					<hr>
+					<div class="icons">
+						<a href="#"><img src="img/facebook_main_icon.png" alt=""></a>
+						<a href="#"><img src="img/twitter_main_icon.png" alt=""></a>
+						<a href="#"><img src="img/inst_main_icon.png" alt=""></a>
+					</div>
+					<hr>
+					<div class="down_menu">
+						<a href="#" class="title"><span>кристалл</span></a>
+						<div class="links">
+							<a href="#"><span>о клубе</span></a>
+							<a href="contacts.html"><span>контакты</span></a>
+							<a href="#"><span>связаться с разработчиками</span></a>
+						</div>
+					</div>
+					<div class="all_rights">© 2016 Crystal. All rights reserved.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+	<script src="libs/jquery/jqueryEasing.js"></script>
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+	<script src="common.js"></script>
+	<script src="js/services_slider.js"></script>
+	
+
+	<!--<script type="text/javascript">
+	{
+	if (screen.width > 480) document.write ('<script type="text/javascript" src="libs/fullpage/jquery.fullPage.js" ></sc' + 'ript>');
+	}
+	</script>-->
+
+</body>
+</html>
